@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
+
+a, li{
+    cursor: none;
+}
+
+$SoftBlue: hsl(231, 69%, 60%);
+$SoftRed: hsl(0, 94%, 66%);
+$GrayishBlue: hsl(229, 8%, 60%);
+$VeryDarkBlue: hsl(229, 31%, 21%);
+
+@keyframes intro {
+    0% {
+        top: 0vh;
+    }
+    80% {
+        top:-50vh;
+    }
+    100% {
+        top:-90vh;
+    }
+}
+
+.animation_intro {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    z-index: 190;
+    top:-100vh;
+    animation-name: intro;
+    animation-duration: 2s;
+}
+
+@media (min-width:1024px) {
+
+    body, html {
+        cursor: none;
+    }
+    
+    .cursor {
+        pointer-events: none;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    #pointer {
+        background-color: black;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    
+    #circle {
+        width: 48px;
+        height: 48px;
+        border:1px solid black;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all .3s ease-out;
+        -webkit-transition: all .3 ease-out;
+        -moz-transition: all .3 ease-out;
+        -ms-transition: all .3 ease-out;
+        -o-transition: all .3 ease-out;
+    }
+}
+
+@import "Nav","Header","Features","Footer","Extensions","Contact",'Faq';
+
+.ease {
+    opacity: 0;
+    transition: opacity .5s ease-in;
+}
+  
+.ease.appear {
+    opacity: 1;
+}

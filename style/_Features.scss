@@ -1,0 +1,253 @@
+.features__title {
+    text-align: center;
+}
+
+.features__title h2 {
+    font-size: 1.5rem;
+    color:$VeryDarkBlue;
+}
+
+.features__title p {
+    color:$GrayishBlue;
+    font-size: .95rem;
+    line-height: 1.5;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: .5rem;
+}
+
+.features__items-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.features__items {
+    padding: .8rem 0rem;
+    width: 80%;
+    margin: 0 auto;
+    color:$GrayishBlue;
+    font-size: 1rem;
+    transition: all .5s;
+    height: 3rem;
+    overflow-y: hidden;
+}
+
+.features__items:nth-child(1) {
+    border-top: 1px solid $GrayishBlue;
+    border-bottom: 1px solid $GrayishBlue;
+}
+
+.features__items:nth-child(2) {
+    border-bottom: 1px solid $GrayishBlue;
+}
+
+.features__items:nth-child(3) {
+    border-bottom: 1px solid $GrayishBlue;
+}
+
+.features__items + .active {
+    border-bottom: 4px solid $SoftRed;
+}
+
+.focus .features__items div {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: .8rem;
+    margin-bottom: -.8rem;
+    height: 3px;
+    background-color: $SoftRed;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.focus .features__items {
+    color:black;
+}
+
+.features__intro {
+    overflow: hidden;
+}
+
+.features__bg {
+    display: block;
+    background-color: $SoftBlue;
+    width: 22.5rem;
+    height: 12rem;
+    border-radius:75px;
+    -webkit-border-radius:75px;
+    -moz-border-radius:75px;
+    -ms-border-radius:75px;
+    -o-border-radius:75px;
+    z-index: -2;
+    margin-top: -8.8rem;
+    margin-left:-5rem;
+}
+
+.features__illustration {
+    margin-left: 5vw;
+}
+
+.features__illustration img {
+    width: 17.5rem;
+    height: auto;
+    max-width: 500px;
+}
+
+.features__text h3 {
+    font-size: 1.25rem;
+}
+
+.features__text p {
+    color:$GrayishBlue;
+    line-height: 1.5;
+    font-size: .9rem;
+    max-width: 20rem;
+    margin: 0 auto;
+    margin-top: .5rem;
+}
+
+.features__text a {
+    display: none;
+}
+
+@keyframes in {
+    0%{
+        margin-left: -120vw;
+    }
+    100% {
+        margin-left: 0vw;
+    }
+}
+
+@keyframes out {
+    0% {
+        margin-left: 0vw; 
+    }
+    100% {
+        margin-left: -200vw;
+    }
+}
+
+.features__content .in {
+    animation-name: in;
+    animation-duration: 1s;
+}
+
+.features__content .out {
+    animation-name: out;
+    animation-duration: 1s;
+}
+
+.features__container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+@media (min-width:768px) {
+    
+    .features__bg {
+        width: 27.5rem;
+        height: 16rem;
+        margin-top: -13rem;
+    }
+
+    .features__illustration {
+        margin-left: 3rem;
+    }
+
+    .features__illustration img {
+        width: 25rem;
+    }
+}
+
+@media (min-width:1024px) {
+    
+    .features__title h2 {
+        font-size: 1.75rem;
+    }
+
+    .features__title p {
+        font-size: 1rem;
+        max-width: 30rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    .features__items-wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 40rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+
+    .features__items:nth-child(1) {
+        border-top: 0;
+    }
+
+    .features__items {
+        border-bottom: 1px solid $GrayishBlue;
+    }
+
+    .features__content {
+        height: 600px;
+        overflow: hidden;
+    }
+    
+    .active.features__container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .features__text {
+        text-align: initial;
+        padding: 0vw 10vw;
+    }
+
+    .features__text h3 {
+        font-size: 1.5rem;
+    }
+
+    .features__text p {
+        max-width: inherit;
+        width: 22.5rem;
+        font-size: .95rem;
+    }
+
+    .features__text a {
+        display: block;
+        text-decoration: none;
+        color:white;
+        font-family: Rubik,'sans-serif';
+        background-color: $SoftBlue;
+        padding: .75rem 1rem;
+        font-size: .9rem;
+        width: fit-content;
+        margin-top: 1rem;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width:1440px) {
+    
+    .features__bg {
+        width: 32.5rem;
+        height: 20rem;
+        margin-top: -16rem;
+    }
+
+    .features__illustration img {
+        width: 30rem;
+    }
+}

@@ -1,0 +1,74 @@
+.contact {
+    background-color: $SoftBlue;
+    color:white;
+    text-align: center;
+    padding: 3rem 0rem;
+}
+
+.contact-head h5 {
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.contact-head h6 {
+    font-size: 1.2rem;
+    margin-top: .5rem;
+}
+
+.contact form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+    height: 6.25rem;
+    margin-top: 1.5rem;
+}
+
+.contact form input {
+    height: 2.75rem;
+    border-radius: 5px;
+    border: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+#contact-email::placeholder {
+    opacity: 50%;
+}
+
+#contact-email::placeholder {
+    padding: 0rem 1rem;
+}
+
+#contact-submit {
+    background-color:$SoftRed;
+    color:white;
+    font-weight: 500;
+}
+
+@media (min-width:768px) {
+
+    .contact-head h5 {
+        font-size: .8rem;
+    }
+    
+    .contact-head h6 {
+        font-size: 1.75rem;
+    }
+
+    .contact form {
+        flex-direction: row;
+        width: 60%;
+        max-width: 500px;
+    }
+
+    #contact-email {
+        width: 70%;
+    }
+
+    #contact-submit {
+        width: 25%;
+    }
+}

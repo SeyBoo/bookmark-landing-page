@@ -1,0 +1,88 @@
+.extension {
+    text-align: center;
+}
+
+.extension-head {
+    margin-top: 10vh;
+}
+
+.extension-head h3 {
+    color:$VeryDarkBlue;
+}
+
+.extension-head p {
+    color:$GrayishBlue;
+    font-size: .95rem;
+    line-height: 1.6;
+    width: 20rem;
+    margin: 0 auto;
+    margin-top: .75rem;
+}
+
+.extension-item {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding-top: 3rem;
+    padding-bottom: 1.25rem;
+    width: 17.5rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    height: 21rem;
+    overflow: hidden;
+}
+
+.extension-item-head h4 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color:$VeryDarkBlue;
+}
+
+.extension-item-head p {
+    font-size: .9rem;
+    margin-top: .5rem;
+    color:$GrayishBlue;
+}
+
+.extension-item-btn {
+    margin-top: 2rem;
+    border-top: 5px dotted hsla(225, 2%, 60%, 0.452);
+}
+
+.extension-item-btn button {
+    margin-top: 1.25rem;
+    background-color: $SoftBlue;
+    border: 0;
+    color:white;
+    border-radius: 5px;
+    padding: .8rem 2rem;
+    font-size: .9rem;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+@media (min-width:1024px) {
+    
+    .extension-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 60rem;
+        margin: 0 auto;
+        padding-bottom: 5vh;
+    }
+
+    #extension-item-02 {
+        margin-top: 4rem;
+    }
+
+    #extension-item-03 {
+        margin-top: 6rem;
+    }
+
+    .extension-head h3 {
+        font-size: 1.5rem;
+    }
+
+    .extension-head p {
+        width: 32rem;
+        font-size: 1rem;
+    }
+}
